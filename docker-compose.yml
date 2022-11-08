@@ -22,9 +22,9 @@ services:
             - '.:/var/www/html'
         networks:
             - sail
+            - takeout
         depends_on:
             - selenium
-            - takeout
     selenium:
         image: 'selenium/standalone-chrome'
         extra_hosts:
