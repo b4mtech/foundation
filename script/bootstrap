@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+takeout start --all
+
+./vendor/bin/sail up -d
