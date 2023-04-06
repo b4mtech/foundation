@@ -1,0 +1,12 @@
+FROM node:19-alpine AS node-builder
+COPY . /app
+RUN cd /app && \
+    yarn install && \
+    yarn run build
+
+FROM cgr.dev/chainguard/nginx:latest-dev
+
+COPY . /app
+COPY --from=node-builder /app/public /app/public
+COPY .env.production /app/.env
+COPY ./config/nginx.conf /etc/nginx/

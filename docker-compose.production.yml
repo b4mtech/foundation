@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    image: 940080879460.dkr.ecr.us-east-2.amazonaws.com/bandm/${APP_IMAGE}:latest
+    restart: unless-stopped
+    networks:
+      - default
+  nginx:
+    image: 940080879460.dkr.ecr.us-east-2.amazonaws.com/bandm/${APP_IMAGE}:nginx
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT}:443"
+    depends_on:
+      - app
+    networks:
+        - default
