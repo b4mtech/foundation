@@ -8,13 +8,15 @@
         "php": "^8.2 || ^8.3",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^11.0",
-        "livewire/livewire": "^3.4",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "livewire/livewire": "^3.4"
     },
     "require-dev": {
+        "aaronfrancis/solo": "^0.1.2",
         "fakerphp/faker": "^1.9.1",
         "laravel/dusk": "^8.0",
+        "laravel/pail": "^1.2",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0",
         "mockery/mockery": "^1.4.4",
