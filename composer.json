@@ -13,7 +13,6 @@
         "livewire/livewire": "^3.4"
     },
     "require-dev": {
-        "soloterm/solo": "^0.5.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/boost": "^1.8",
         "laravel/dusk": "^8.0",
@@ -25,6 +24,8 @@
         "pestphp/pest": "^4.0",
         "pestphp/pest-plugin-laravel": "^4.0",
         "phpunit/phpunit": "^12.0",
+        "rector/rector": "^2.2",
+        "soloterm/solo": "^0.5.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
